@@ -1,0 +1,50 @@
+@import "styles/font.scss";
+
+// $bg-primary-color: #ADA996;  /* fallback for old browsers */
+// $bg-primary-color: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+// $bg-primary-color: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+$bg-primary-color: #e8ebee;
+// $bg-secondary-color: #141E30;  /* fallback for old browsers */
+// $bg-secondary-color: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+// $bg-secondary-color: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+$bg-secondary-color: #262626;
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Indie Flower', sans-serif;
+    color: #eee; 
+    background: $bg-primary-color; 
+    font-weight: bold;
+}
+
+.jumbotron{
+    border-radius: 0px;
+}
+
+.padding-top{
+    padding-top: 1.5rem;
+}
+.padding-bottom{
+    padding-bottom: 1.5rem;
+}
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

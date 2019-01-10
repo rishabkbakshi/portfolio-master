@@ -1,0 +1,79 @@
+{
+    "SERVER_PORT": 4007,
+    "path": {
+        "src": {
+            "default": "./src/",
+            "html": "./src/**/*.html",
+            "scss": "./src/app/**/*.scss",
+            "js": "./src/app/**/*.js",
+            "vendorJs": "./src/vendor/scripts/**/*.js",
+            "vendorCss": "./src/vendor/styles/**/*.css",
+            "images": "./src/assets/img/**/*",
+            "assets": "./src/assets/"
+        },
+        "temp": {
+            "default": "./temp/",
+            "html": "./temp/index.html",
+            "css": "./temp/app/",
+            "js": "./temp/app/",
+            "vendorJs": "./temp/vendor/scripts/",
+            "vendorCss": "./temp/vendor/styles/",
+            "images": "./temp/assets/img/",
+            "assets": "./temp/assets/"
+        },
+        "dist": {
+            "default": "./dist/",
+            "html": "./dist/index.html",
+            "css": "./dist/styles/",
+            "js": "./dist/scripts/",
+            "assets":"./dist/assets/"
+        }
+    },
+    "injectScripts": {
+        "app": [
+            "app/app.js",
+            "app/pages/home/homeCtrl.js",
+
+            "app/components/navbar/navbar.directive.js",
+
+            "app/components/navbar/navbarCtrl.js"
+
+        ],
+        "vendor": [
+            "vendor/scripts/jquery.min.js",
+            "vendor/scripts/angular.min.js",
+            "vendor/scripts/angular-ui-router.min.js",
+            "vendor/scripts/loading-bar.min.js",
+            "vendor/scripts/bootstrap.min.js",
+            "vendor/scripts/all.min.js",
+            "vendor/scripts/fullpage.min.js",
+            "vendor/scripts/fullpage.extensions.min.js"
+        ]
+    },
+    "injectStyles": {
+        "app": [
+            "app/app.scss",
+
+            "app/pages/home/home.scss",
+            "app/pages/design/design.scss",
+
+            "app/components/navbar/navbar.scss"
+
+        ],
+        "appCss": [
+            "app/app.css",
+
+            "app/pages/home/home.css",
+            "app/pages/design/design.css",
+
+            "app/components/navbar/navbar.css"
+
+        ],
+        "vendor": [
+            "vendor/styles/bootstrap.min.css",
+            "vendor/styles/all.min.css",
+            "vendor/styles/loading-bar.min.css",
+            "vendor/styles/fullpage.min.css"
+        ]
+    }
+}

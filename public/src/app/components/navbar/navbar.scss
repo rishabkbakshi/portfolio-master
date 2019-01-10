@@ -1,0 +1,26 @@
+@import "../../styles/font.scss";
+
+
+#trcNavbar{
+    padding: .8rem;
+    font-size: 20px;
+    background: rgba(0,0,0,1) !important;
+    width: 100%;
+
+    .navbar-nav li{
+        padding-right: 20px;
+    }
+
+    .nav-link{
+        font-size: 1.1em !important;
+    }
+
+    #pageTitle{
+        font-size: 32px;
+        // font-weight: bold;
+        font-family: 'Kaushan Script', sans-serif;
+    }
+    
+}
+
+

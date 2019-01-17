@@ -5,8 +5,11 @@ const gulp = require('gulp')
 const plumber = require("gulp-plumber")
 const eslint = require("gulp-eslint")
 const uglify = require("gulp-uglify")
+const rename = require("gulp-rename");
 const browsersync = require("browser-sync")
 const concat = require('gulp-concat')
+const babel = require('gulp-babel');
+
 var angularOrder = require('gulp-angular-order');
 
 
@@ -32,6 +35,9 @@ function jsDev() {
     return gulp
         .src([config.path.src.js])
         .pipe(plumber())
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(gulp.dest(config.path.temp.js))
         .pipe(browsersync.stream())
 }
@@ -52,8 +58,12 @@ function jsDist() {
         .src(jsSrc)
         .pipe(angularOrder())
         .pipe(plumber())
+        .pipe(concat('app.js'))
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(uglify())
-        .pipe(concat('app.min.js'))
+        .pipe(rename({ suffix: ".min" }))
         .pipe(gulp.dest(config.path.dist.js))
 }
 

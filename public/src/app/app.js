@@ -1,16 +1,12 @@
-// var APP_URL = "http://localhost:4007/";
-var APP_URL = "https://theradicalmaster.herokuapp.com/"
+// const APP_URL = "http://localhost:4007/";
+const APP_URL = "https://theradicalmaster.herokuapp.com/"
 
-var theRadicalCoder = angular.module('TheRadicalCoder', [
+const theRadicalCoder = angular.module('TheRadicalCoder', [
     'ui.router',
     'angular-loading-bar'
 ])
 
-
-
-theRadicalCoder.config(routeConfig);
-
-function routeConfig($urlRouterProvider, $stateProvider) {
+const routeConfig = ($urlRouterProvider, $stateProvider) => {
     $urlRouterProvider.otherwise('/home');
 
     $stateProvider
@@ -22,4 +18,7 @@ function routeConfig($urlRouterProvider, $stateProvider) {
         })
 
 }
+
+
+theRadicalCoder.config(routeConfig);
 

@@ -9,8 +9,7 @@ const rename = require("gulp-rename");
 const browsersync = require("browser-sync")
 const concat = require('gulp-concat')
 const babel = require('gulp-babel');
-
-var angularOrder = require('gulp-angular-order');
+const ngAnnotate = require('gulp-ng-annotate');
 
 
 function addPathPrefix(prefix, array) {
@@ -56,8 +55,8 @@ function jsDist() {
 
     return gulp
         .src(jsSrc)
-        .pipe(angularOrder())
         .pipe(plumber())
+        // .pipe(ngAnnotate())
         .pipe(concat('app.js'))
         .pipe(babel({
             presets: ['@babel/env']
@@ -74,8 +73,9 @@ function vendorJsDist() {
 
     return gulp
         .src(jsSrc)
-        .pipe(uglify())
         .pipe(concat('vendor.min.js'))
+        // .pipe(ngAnnotate())
+        .pipe(uglify())
         .pipe(gulp.dest(config.path.dist.js))
 }
 

@@ -1,4 +1,9 @@
-angular.module('TheRadicalCoder').controller('HomeCtrl', ['$scope', '$http', '$state', '$timeout', HomeCtrl]);
+
+angular
+    .module('TheRadicalCoder')
+    .controller('HomeCtrl', HomeCtrl);
+
+HomeCtrl.$inject = ['$scope', '$http', '$state', '$timeout']
 
 function HomeCtrl($scope, $http, $state, $timeout) {
 
@@ -68,7 +73,7 @@ function HomeCtrl($scope, $http, $state, $timeout) {
                     "img_url": "assets/img/designs/youngtiger_full.png",
                 },
             ]
-        }, 
+        },
         {
             "id": 3,
             "name": "IEEE T-shirt",
@@ -80,7 +85,7 @@ function HomeCtrl($scope, $http, $state, $timeout) {
                     "img_url": "assets/img/designs/ieee_full.jpg",
                 }
             ]
-        }, 
+        },
         // {
         //     "id": 4,
         //     "name": "BrainWaves Event Poster",
@@ -114,7 +119,7 @@ function HomeCtrl($scope, $http, $state, $timeout) {
             "id": 2,
             "name": "FaceWord",
             "img_url": "assets/img/projects/faceword.png",
-            "description": "A Webapp showing login through Facial Recognition using OpenFace",
+            "description": "Webapp that logins in through Facial Recognition",
             "content_url": "https://github.com/rishabkbakshi/ece415-faceword-demo"
         },
         {
@@ -129,13 +134,13 @@ function HomeCtrl($scope, $http, $state, $timeout) {
             "name": "SmartVision",
             "img_url": "assets/img/projects/smartvision.png",
             "description": "Face detection Web App built using React and Clarifai API",
-            "content_url": ""
+            "content_url": "https://github.com/rishabkbakshi/smartvision-master"
         },
         {
             "id": 5,
             "name": "SmartWord",
             "img_url": "assets/img/projects/smartword.png",
-            "description": "Simple Word games implemented in Vanilla JS (using ES6)",
+            "description": "Word games implemented in VanillaJS (ES6)",
             "content_url": "https://github.com/rishabkbakshi/simple-js-games"
         }
 
@@ -146,7 +151,7 @@ function HomeCtrl($scope, $http, $state, $timeout) {
             : ($scope.currentIndex >= $scope.designsData.length - 1) ? $scope.currentIndex = 0
                 : $scope.currentIndex += value;
 
-        $timeout(() => { $scope.thumbnailIndex = 0; console.log($scope.currentIndex) }, 50);
+        $timeout(() => { $scope.thumbnailIndex = 0 }, 50);
     }
 
     $scope.updateThumbnailIndex = (value) => {

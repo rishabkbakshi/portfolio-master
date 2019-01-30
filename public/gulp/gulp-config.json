@@ -42,12 +42,11 @@
         "vendor": [
             "vendor/scripts/jquery.min.js",
             "vendor/scripts/angular.min.js",
+            "vendor/scripts/angular-route.min.js",
             "vendor/scripts/angular-ui-router.min.js",
             "vendor/scripts/loading-bar.min.js",
             "vendor/scripts/bootstrap.min.js",
-            "vendor/scripts/all.min.js",
-            "vendor/scripts/fullpage.min.js",
-            "vendor/scripts/fullpage.extensions.min.js"
+            "vendor/scripts/all.min.js"
         ]
     },
     "injectStyles": {

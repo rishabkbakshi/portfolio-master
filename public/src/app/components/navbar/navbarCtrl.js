@@ -1,4 +1,8 @@
 
-angular.module('TheRadicalCoder').controller('trcNavbarCtrl', ['$scope', '$http', '$state', trcNavbarCtrl]);
+angular
+    .module('TheRadicalCoder')
+    .controller('trcNavbarCtrl', trcNavbarCtrl);
 
-const trcNavbarCtrl = ($scope, $location) => {};
+trcNavbarCtrl.$inject = ['$scope', '$http', '$state']
+
+function trcNavbarCtrl($scope, $http, $state) { };

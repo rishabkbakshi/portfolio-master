@@ -3,6 +3,7 @@
 
 #homeScreen{
     min-height: calc(100vh - 75px);
+    // width: 100%;
     background: url('../../../assets/img/home_setup_I.jpg');
     background-size: cover;
     display: flex;
@@ -19,6 +20,7 @@
 
 #helloSection{
     font-size: 1.5rem;
+    padding: 2rem;
 
     img{
         height: 150px;
@@ -39,6 +41,7 @@
 
 #skillsSection{
     background: $bg-secondary-color;
+    padding: 2rem;
     
     hr{
         width: 75%;
@@ -58,12 +61,11 @@
 #projectsSection{
     font-size: 1.5rem;
     background: $bg-primary-color;
-    color: #020202;   
-    padding-left: 0;
-    padding-right: 0;
+    color: #020202;
+    padding: 1.5rem;
     
     .card-img-top{
-        border: solid #efefef 0.5px; 
+        border: solid #efefef 0.5px;
     }
 
     hr{
@@ -74,6 +76,8 @@
 } 
 
 #socialSection{
+    font-size: 1.5rem;
+
     .social-badge-container{        
         img{
             width: 50px;
@@ -85,6 +89,7 @@
 
 
 #designsSection{
+    font-size: 1.5rem;
     background: $bg-secondary-color;
 
     hr{
@@ -111,6 +116,7 @@
 }
 
 #pageFooter{
+    font-size: 1.5rem;
     background: $bg-secondary-color;
 }
 

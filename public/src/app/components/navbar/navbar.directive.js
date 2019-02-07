@@ -5,7 +5,7 @@ angular
     .directive('trcNavbar', () => {
         return {
             restrict: 'E',
-            templateUrl: 'app/components/navbar/navbar.html',
+            templateUrl: 'views/navbar.html',
             controller: trcNavbarCtrl
         };
     });

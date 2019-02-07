@@ -42,5 +42,11 @@ function copyDist(){
     .pipe(gulp.dest(config.path.dist.assets))
 }
 
+function copyViews(){
+    return gulp
+    .src(config.path.src.views + "**/*")
+    .pipe(gulp.dest(config.path.dist.views))
+}
+
 gulp.task('assets:dev', gulp.series(copyDev))
-gulp.task('assets:dist', gulp.series(images, copyDist))
+gulp.task('assets:dist', gulp.series(images, copyDist, copyViews))

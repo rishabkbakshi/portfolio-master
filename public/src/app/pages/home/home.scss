@@ -3,35 +3,46 @@
 
 #homeScreen{
     min-height: calc(100vh - 75px);
-    // width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     background: url('../../../assets/img/home_setup_I.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 2.5rem;
 
     .home-title{
         font-family: harry-potter;
         font-size: 5rem;
         text-align: center;
     }
-}
-
-
-#helloSection{
-    font-size: 1.5rem;
-    padding: 2rem;
 
     img{
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
         border-radius: 50%;
         border: solid 2px $bg-secondary-color;
         margin: 10px;
     }
+}
+
+
+#helloSection{
+    max-width: 100%;
+    overflow-x: hidden;
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 2rem 2rem;
+    color: #333;
+
+    hr{
+        width: 75%;
+        margin-top: 0px;
+        border-top: solid 2px #373c42;
+    } 
 
     .hello-message{
-        color: #333;
     
         h1{
             font-size: 3rem;
@@ -40,6 +51,8 @@
 }
 
 #skillsSection{
+    max-width: 100%;
+    overflow-x: hidden;
     background: $bg-secondary-color;
     padding: 2rem;
     
@@ -59,13 +72,20 @@
 }
 
 #projectsSection{
-    font-size: 1.5rem;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-size: 1.4rem;
+    line-height: 2rem;
     background: $bg-primary-color;
     color: #020202;
     padding: 1.5rem;
     
     .card-img-top{
         border: solid #efefef 0.5px;
+    }
+
+    .card-text{
+        font-size: 1.25rem;
     }
 
     hr{
@@ -76,6 +96,9 @@
 } 
 
 #socialSection{
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 3rem 0rem;
     font-size: 1.5rem;
 
     .social-badge-container{        
@@ -89,6 +112,8 @@
 
 
 #designsSection{
+    max-width: 100%;
+    overflow-x: hidden;
     font-size: 1.5rem;
     background: $bg-secondary-color;
 
@@ -116,6 +141,8 @@
 }
 
 #pageFooter{
+    max-width: 100%;
+    overflow-x: hidden;
     font-size: 1.5rem;
     background: $bg-secondary-color;
 }

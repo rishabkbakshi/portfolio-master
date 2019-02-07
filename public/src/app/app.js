@@ -7,17 +7,21 @@ angular
         'angular-loading-bar',
         'ngRoute'
     ])
-    .config(($urlRouterProvider, $stateProvider) => {
-        $urlRouterProvider.otherwise('/home');
+    .config([
+        '$urlRouterProvider',
+        '$stateProvider',
+        ($urlRouterProvider, $stateProvider) => {
+            $urlRouterProvider.otherwise('/home');
 
-        $stateProvider
-            .state('home', {
-                url: '/home',
-                title: 'Home',
-                templateUrl: 'app/pages/home/home.html',
-                controller: 'HomeCtrl'
-            })
+            $stateProvider
+                .state('home', {
+                    url: '/home',
+                    title: 'Home',
+                    templateUrl: 'views/home.html',
+                    controller: 'HomeCtrl'
+                })
 
-    })
+        }
+    ])
 
 

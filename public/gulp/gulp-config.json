@@ -9,7 +9,8 @@
             "vendorJs": "./src/vendor/scripts/**/*.js",
             "vendorCss": "./src/vendor/styles/**/*.css",
             "images": "./src/assets/img/**/*",
-            "assets": "./src/assets/"
+            "assets": "./src/assets/",
+            "views":"./src/views/"
         },
         "temp": {
             "default": "./temp/",
@@ -26,7 +27,8 @@
             "html": "./dist/index.html",
             "css": "./dist/styles/",
             "js": "./dist/scripts/",
-            "assets":"./dist/assets/"
+            "assets":"./dist/assets/",
+            "views":"./dist/views/"
         }
     },
     "injectScripts": {

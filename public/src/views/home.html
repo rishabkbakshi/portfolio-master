@@ -1,26 +1,36 @@
 <!-- Main Page -->
 <div id="homeScreen" class="container-fluid">
-    <div class="row no-gutters">
+    <div class="row no-gutters text-center">
         <div class="col-12">
-            <div class="home-title">I solemnly swear <br> that I am up to no good</div>
+            <h1 class="display-4">Hello!</h1>
+            <h2>I'm Rishab</h2>
+            <div class="col-12">
+                <img src="../../../assets/img/theradicalcoder.jpg">
+            </div>
+
+            <h3>Nice to meet you!</h3>
         </div>
+        <!-- <div class="col-12">
+            <div class="home-title">I solemnly swear <br> that I am up to no good</div>
+        </div> -->
     </div>
 </div>
 
 <!-- Hello Message -->
 <div id="helloSection" class="container-fluid">
+    <div class="col-12 text-center">
+        <h1> About</h1>
+    </div>
+    <hr>
     <div class="row no-gutters hello-message text-center align-items-center justify-content-center">
-        <div class="col-12">
-            <h1><strong>Hello! It's Rishab</strong></h1>
-        </div>
-        <img src="../../../assets/img/theradicalcoder.jpg">
-        <div class="col-12">
-            <p style="text-align: justify;">
-                I am a graduate student pursuing my Master's in Computer Engineering. I love working on Hardware
-                and Software.
-                But I have a really special liking towards Web Development, and I enjoy building apps that help provide
-                real-time solutions.
-            </p>
+        <div class="row text-center align-items-center justify-content-center">
+            <div class="col-xs-11 col-sm-10 col-md-8 col-xl-6">
+                <p>
+                    Since beggining web development 2 years ago, I have enjoyed learning and building software,
+                    be it open source projects or enterprise applications as part of my work in industry.
+                    I love working in a team and collaborating with talented people while also learning from them.
+                </p>
+            </div>
         </div>
         <div class="col-12">
             <a href="#">
@@ -34,7 +44,7 @@
 <div id="skillsSection" name="skillsSection" class="container-fluid">
     <!-- <div class="row text-center text-light"> -->
     <div class="col-12 text-center">
-        <h1 class="display-4"> Skill Set</h1>
+        <h1> Skill Set</h1>
     </div>
     <hr>
     <!-- </div> -->
@@ -76,17 +86,17 @@
     </div>
 </div>
 
-<!-- </>Projects -->
+<!-- Projects -->
 <div id="projectsSection" class="container-fluid">
     <!-- <div class="row text-center text-dark"> -->
     <div class="col-12 text-center">
-        <h1 class="display-4">Projects</h1>
+        <h1>Projects</h1>
     </div>
     <hr>
     <!-- </div> -->
     <div class="container-fluid padding-top padding-bottom">
-        <div class="row text-dark">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 padding-bottom" ng-repeat="project in projectsData">
+        <div class="row text-dark align-items-center justify-content-center">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-bottom" ng-repeat="project in projectsData">
                 <div class="card">
                     <div class="col-12 padding-top padding-bottom">
                         <img class="card-img-top" ng-src="{{project.img_url}}">
@@ -96,7 +106,8 @@
                         <div class="col-12 padding-bottom">
                             <p class="card-text">{{project.description}}</p>
                         </div>
-                        <a ng-hide="!project.content_url" class="btn btn-outline-secondary btn-center" href="{{project.content_url}}">Know More</a>
+                        <a ng-hide="!project.content_url" class="btn btn-outline-dark btn-center" href="{{project.content_url}}">Know
+                            More</a>
                     </div>
 
                 </div>
@@ -106,11 +117,11 @@
 </div>
 
 <!-- Carousel -->
-<div id="designsSection" class="container-fluid text-center align-items-center">
-    <div class="row text-center no-gutters align-items-center">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 padding-top">
+<div id="designsSection" class="container-fluid">
+    <div class="row text-center align-items-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
             <strong>
-                <h1>Design & Illustrations</h1>
+                <h1 class="padding">Design & Illustrations</h1>
             </strong>
             <!-- <hr> -->
         </div>
@@ -165,13 +176,10 @@
 </div>
 
 <!-- Like My work -->
-<div id="socialSection" class="container-fluid padding-top padding-bottom">
+<div id="socialSection" class="container-fluid">
     <div class="row text-center text-dark no-gutters">
         <div class="col-12">
-            <strong>
-                <h1>Like my Work?</h1>
-            </strong>
-            <h4> Check me out on:</h4>
+            <h4> Know more here:</h4>
             <div class="social-badge-container">
                 <a href="https://www.linkedin.com/in/rishab-kumar-bakshi-93473ab8/" target="_blank"><img src="assets/img/icons/007-linkedin.svg"></a>
                 <!-- <img src="assets/img/icons/020-medium.svg"> -->
@@ -184,8 +192,8 @@
 </div>
 
 <!-- Comments Section -->
-<footer id="pageFooter">
-    <div class="container-fluid padding-top padding-bottom text-light">
+<div id="pageFooter">
+    <!-- <div class="container-fluid padding-top padding-bottom text-light">
         <div class="row justify-content-center no-gutters">
             <div class="col-xs-12 col-sm-12 col-md-6">
                 <h3><strong>Please leave a comment! (*Placeholder*)</strong></h3>
@@ -195,17 +203,18 @@
                             placeholder="Enter email address" disabled>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" aria-label="With textarea" placeholder="Enter Comments here" disabled></textarea>
+                        <textarea class="form-control" aria-label="With textarea" placeholder="Enter Comments here"
+                            disabled></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary" disabled>Submit</button>
                 </form>
             </div>
         </div>
     </div>
-    <hr class="border-light">
+    <hr class="border-light"> -->
     <div class="text-center">
         rishabkbakshi
     </div>
-</footer>
+</div>
 
 <!-- <div id="goToTop" ng-click="goToTop()"><i class="fas fa-arrow-up"></i></div> -->

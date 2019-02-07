@@ -56,7 +56,7 @@ function jsDist() {
     return gulp
         .src(jsSrc)
         .pipe(plumber())
-        // .pipe(ngAnnotate())
+        .pipe(ngAnnotate())
         .pipe(concat('app.js'))
         .pipe(babel({
             presets: ['@babel/env']
@@ -73,9 +73,9 @@ function vendorJsDist() {
 
     return gulp
         .src(jsSrc)
-        .pipe(concat('vendor.min.js'))
         // .pipe(ngAnnotate())
-        .pipe(uglify())
+        .pipe(concat('vendor.min.js'))
+        // .pipe(uglify())
         .pipe(gulp.dest(config.path.dist.js))
 }
 

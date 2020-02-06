@@ -74,7 +74,8 @@
             "vendor/styles/bootstrap.min.css",
             "vendor/styles/all.min.css",
             "vendor/styles/loading-bar.min.css",
-            "vendor/styles/fullpage.min.css"
+            "vendor/styles/fullpage.min.css",
+            "vendor/styles/tachyons.min.css"
         ]
     }
 }

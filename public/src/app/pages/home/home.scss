@@ -101,13 +101,7 @@
     padding: 3rem 0rem;
     font-size: 1.5rem;
 
-    .social-badge-container{        
-        img{
-            width: 50px;
-            height: auto;
-            margin: 20px;
-        }
-    }
+    
 }
 
 
@@ -143,24 +137,34 @@
 #pageFooter{
     max-width: 100%;
     overflow-x: hidden;
-    font-size: 1.5rem;
-    background: $bg-secondary-color;
-}
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: #000;
+    background: $bg-primary-color;
 
-#goToTop{
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    height: 50px;
-    width: 50px;
-    z-index: 100;
-    background: rgba(0,0,0,0.7);
-    border-radius: 25px;
-    padding: 10px;
-
-    .fa-arrow-up{
-        font-size: 30px;
-        margin: 0px 3px;
+    .social-badge-container{        
+        img{
+            width: 40px;
+            height: auto;
+            margin: 20px;
+        }
     }
 }
+
+// #goToTop{
+//     display: none;
+//     position: fixed;
+//     bottom: 30px;
+//     right: 30px;
+//     height: 50px;
+//     width: 50px;
+//     z-index: 100;
+//     background: rgba(0,0,0,0.7);
+//     border-radius: 25px;
+//     padding: 10px;
+
+//     .fa-arrow-up{
+//         font-size: 30px;
+//         margin: 0px 3px;
+//     }
+// }

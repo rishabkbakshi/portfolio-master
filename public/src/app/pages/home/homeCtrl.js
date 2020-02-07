@@ -103,47 +103,70 @@ function HomeCtrl($scope, $http, $state, $timeout) {
     $scope.projectsData = [
         {
             "id": 0,
-            "name": "IMIAssist.ai",
-            "img_url": "assets/img/projects/webrtc.png",
-            "description": " AI-enabled Realtime video calling and assistance application",
-            "content_url": ""
+            "name": "IMIBot.ai",
+            "img_url": "assets/img/projects/imibot.png",
+            "description": "A platform for IMI Mobile to build channel-aware contextual virtual assistants.",
+            "content_url": "https://imimobile.com/products/ai-automation"
         },
         {
             "id": 1,
-            "name": "IMIBot.ai",
-            "img_url": "assets/img/projects/imibot.png",
-            "description": "A platform for IMI Mobile to create and deploy ChatBots",
-            "content_url": ""
+            "name": "IMIAssist.ai",
+            "img_url": "assets/img/projects/webrtc.png",
+            "description": " AI-enabled Realtime video calling and assistance application powered by Google WebRTC.",
+            "content_url": "https://imimobile.com/solutions/webrtc"
+        },
+        {
+            "id": 2,
+            "name": "A.C.E.R Red",
+            "img_url": "assets/img/projects/acer-red.png",
+            "description": "Official website for the Advanced Cyberinfrastructure for Education and Research implemented in WordPress.",
+            "content_url": "https://acer.uic.edu"
+        },
+        {
+            "id": 3,
+            "name": "Nagios and Ganglia",
+            "img_url": "assets/img/projects/nagios-ganglia.png",
+            "description": "Comprehensive monitoring system for in-house High Performance Computing cluster at A.C.E.R",
+            "content_url": "https://acer.uic.edu"
+        }
+    ];
+
+    $scope.hobbyProjects = [
+        {
+            "id": 0,
+            "name": "SmartVision",
+            "img_url": "assets/img/projects/smartvision.png",
+            "description": "Face detection web application built using React, PostgreSQL and Clarifai API as part of a Udemy course. ",
+            "content_url": "https://github.com/rishabkbakshi/smartvision-master"
+        },        
+        {
+            "id": 1,
+            "name": "SmartQuiz",
+            "img_url": "assets/img/projects/smartquiz.png",
+            "description": "A fun trivia Quiz with various categories and user profiles built using ReactJS, PostgreSQL and Open Trivia Database API. ",
+            "content_url": "https://github.com/rishabkbakshi/smartquiz-master"
         },
         {
             "id": 2,
             "name": "FaceWord",
             "img_url": "assets/img/projects/faceword.png",
-            "description": "Webapp that logins in through Facial Recognition",
+            "description": "Web application to authenticate a user using Facial Recognition through OpenFace, as part of a course project. ",
             "content_url": "https://github.com/rishabkbakshi/ece415-faceword-demo"
         },
         {
             "id": 3,
-            "name": "SmartQuiz",
-            "img_url": "assets/img/projects/smartquiz.png",
-            "description": "Trivia Quiz Game built using ReactJS and PostgreSQL",
-            "content_url": "https://github.com/rishabkbakshi/smartquiz-master"
+            "name": "SmartWord",
+            "img_url": "assets/img/projects/smartword.png",
+            "description": "Word games implemented in VanillaJS to test cognitive load for Rehabilitation Robotics Lab at college.",
+            "content_url": "https://github.com/rishabkbakshi/simple-js-games"
         },
         {
             "id": 4,
-            "name": "SmartVision",
-            "img_url": "assets/img/projects/smartvision.png",
-            "description": "Face detection Web App built using React and Clarifai API",
-            "content_url": "https://github.com/rishabkbakshi/smartvision-master"
-        },
-        {
-            "id": 5,
-            "name": "SmartWord",
-            "img_url": "assets/img/projects/smartword.png",
-            "description": "Word games implemented in VanillaJS (ES6)",
-            "content_url": "https://github.com/rishabkbakshi/simple-js-games"
+            "name": "Rehabilitation Robotics Lab",
+            "img_url": "assets/img/projects/rrl-red.png",
+            "description": "Official website for the Rehabilitation Robotics Laboratory implemented in WordPress.",
+            "content_url": "https://rehab-robotics.lab.uic.edu/"
         }
-
     ]
 
     $scope.changeIndex = (value) => {

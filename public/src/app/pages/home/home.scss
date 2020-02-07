@@ -52,6 +52,7 @@
 }
 
 #skillsSection{
+    font-size: 1.15rem;
     max-width: 100%;
     overflow-x: hidden;
     background: $bg-secondary-color;
@@ -62,10 +63,15 @@
         margin-top: 0px;
         border-top: solid 2px #e2e2e2;
     }
+
+    .skill-title{
+        font-size: 1.5rem;
+    }
     
     .skill-icons{
         img{
-            width: 80px;
+            width: 60px;
+            min-height: 60px;
             height: auto;
             margin: 20px;
         }
@@ -83,6 +89,9 @@
     
     .card-img-top{
         border: solid #efefef 0.5px;
+        width: 400px;
+        min-height: 150px;
+        max-height: 200px;
     }
 
     .card-text{

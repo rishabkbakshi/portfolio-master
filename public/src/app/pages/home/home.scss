@@ -2,7 +2,8 @@
 @import "../../app.scss";
 
 #homeScreen{
-    min-height: calc(100vh - 75px);
+    // min-height: calc(100vh - 75px);
+    min-height:100vh;
     max-width: 100%;
     overflow-x: hidden;
     background: url('../../../assets/img/home_setup_I.jpg');
